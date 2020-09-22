@@ -1,10 +1,23 @@
 from array import *
-arr = array("i", [])
-x = int(input("Tal 1:"))
-y = int(input("Tal 2:"))
-arr.append(x)
-arr.append(y)
-arr.reverse
-if array[0] > array[1]:
-    print(array[0])
-else: print(array[1])
+x = str(input("Tal 1:"))
+y = str(input("Tal 2:"))
+x = x[2] + x[1] + x[0]
+y = y[2] + y[1] + y[0]
+x = int(x)
+y = int(y)
+if x < y: 
+    print(y)
+elif x > y:
+    print(x)
+else: 
+    print("de är lika stora")
+
+
+
+# if len(x) > len(y):
+#     x = x[2] + x[1] + x[0]
+#     print(x)
+# elif len(y) > len(x):
+#     y = y[2] + y[1] + y[0]
+#     print(y)
+# else:
