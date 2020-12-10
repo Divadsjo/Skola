@@ -1,4 +1,4 @@
-from array import *
+fmrom array import *
 min = 2
 max = 10000
 ett = 1

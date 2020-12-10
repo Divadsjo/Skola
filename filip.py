@@ -1,6 +1,7 @@
 from array import *
-x = str(input("Tal 1:"))
-y = str(input("Tal 2:"))
+
+x = str(x)
+y = str(y)
 x = x[2] + x[1] + x[0]
 y = y[2] + y[1] + y[0]
 x = int(x)

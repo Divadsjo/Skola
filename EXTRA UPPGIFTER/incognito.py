@@ -1,6 +1,7 @@
 headgear = 0
 eyewear = 0
 face = 0
+resultat = []
 tries = int(input("Försök: "))
 for x in range(tries):
     antalPlag = int(input("Kläddespel: "))
@@ -13,4 +14,10 @@ for x in range(tries):
             eyewear += 1
         elif plag[1] == "face":
             face += 1
-    print(face*eyewear*headgear+face+eyewear+headgear)
+    resultat.append(eyewear+headgear+face+headgear*eyewear+headgear*face+face*eyewear+face*eyewear*headgear)
+    headgear = 0
+    eyewear = 0
+    face = 0
+for x in resultat:
+    print(x)
+    
